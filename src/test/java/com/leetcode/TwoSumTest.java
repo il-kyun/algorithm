@@ -28,8 +28,14 @@ public class TwoSumTest {
         int[] nums = new int[]{2,7,11,15};
         int target = 9;
         TwoSum twoSum = new TwoSum();
-        int[] ints = twoSum.twoSum(nums, target);
+        int[] ints = twoSum.twoSumWithBruteForce(nums, target);
         Assert.assertArrayEquals(new int[]{0,1}, ints);
+
+        int[] ints1 = twoSum.twoSumWithTwoPassHashTable(nums, target);
+        Assert.assertArrayEquals(new int[]{0,1}, ints1);
+
+        int[] ints2 = twoSum.twoSumWithOnePassHashTable(nums, target);
+        Assert.assertArrayEquals(new int[]{0,1}, ints2);
     }
 
     @Test
@@ -37,8 +43,14 @@ public class TwoSumTest {
         int[] nums = new int[]{2,7,11,15};
         int target = 18;
         TwoSum twoSum = new TwoSum();
-        int[] ints = twoSum.twoSum(nums, target);
+        int[] ints = twoSum.twoSumWithBruteForce(nums, target);
         Assert.assertArrayEquals(new int[]{1,2}, ints);
+
+        int[] ints1 = twoSum.twoSumWithTwoPassHashTable(nums, target);
+        Assert.assertArrayEquals(new int[]{1,2}, ints1);
+
+        int[] ints2 = twoSum.twoSumWithOnePassHashTable(nums, target);
+        Assert.assertArrayEquals(new int[]{1,2}, ints2);
     }
 
     @Test
@@ -46,8 +58,14 @@ public class TwoSumTest {
         int[] nums = new int[]{3,2,4};
         int target = 6;
         TwoSum twoSum = new TwoSum();
-        int[] ints = twoSum.twoSum(nums, target);
+        int[] ints = twoSum.twoSumWithBruteForce(nums, target);
         Assert.assertArrayEquals(new int[]{1,2}, ints);
+
+        int[] ints1 = twoSum.twoSumWithTwoPassHashTable(nums, target);
+        Assert.assertArrayEquals(new int[]{1,2}, ints1);
+
+        int[] ints2 = twoSum.twoSumWithOnePassHashTable(nums, target);
+        Assert.assertArrayEquals(new int[]{1,2}, ints2);
     }
 
     @Test
@@ -55,8 +73,14 @@ public class TwoSumTest {
         int[] nums = new int[]{3,5,7,2,12};
         int target = 14;
         TwoSum twoSum = new TwoSum();
-        int[] ints = twoSum.twoSum(nums, target);
+        int[] ints = twoSum.twoSumWithBruteForce(nums, target);
         Assert.assertArrayEquals(new int[]{3,4}, ints);
+
+        int[] ints1 = twoSum.twoSumWithTwoPassHashTable(nums, target);
+        Assert.assertArrayEquals(new int[]{3,4}, ints1);
+
+        int[] ints2 = twoSum.twoSumWithOnePassHashTable(nums, target);
+        Assert.assertArrayEquals(new int[]{3,4}, ints2);
     }
 
 
