@@ -27,15 +27,15 @@ public class ReverseIntegerTest {
     @Test
     public void test3() {
         int num = 10100;
-        ReverseInteger f = new ReverseInteger();
-        int result = f.reverse(num);
-        Assert.assertEquals(101, result, 0);
-    }
+            ReverseInteger f = new ReverseInteger();
+            int result = f.reverse(num);
+            Assert.assertEquals(101, result, 0);
+        }
 
-    @Test
-    public void test4() {
-        int num = 0;
-        ReverseInteger f = new ReverseInteger();
+        @Test
+        public void test4() {
+            int num = 0;
+            ReverseInteger f = new ReverseInteger();
         int result = f.reverse(num);
         Assert.assertEquals(0, result, 0);
     }
