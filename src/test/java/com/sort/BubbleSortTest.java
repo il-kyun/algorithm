@@ -1,5 +1,6 @@
-package com.leetcode;
+package com.sort;
 
+import com.sort.BubbleSort;
 import org.junit.Test;
 
 import java.util.Arrays;

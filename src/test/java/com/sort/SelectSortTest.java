@@ -1,5 +1,6 @@
-package com.leetcode;
+package com.sort;
 
+import com.sort.SelectSort;
 import org.junit.Test;
 
 import java.util.Arrays;
